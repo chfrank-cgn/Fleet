@@ -17,6 +17,8 @@ helm:
         pspEnabled: false
     hardenedKubelet:
       enabled: false
+    kubelet:
+      enabled: true
     prometheus:
       prometheusSpec:
         retention: 1d
