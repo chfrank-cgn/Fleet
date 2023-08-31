@@ -7,6 +7,7 @@ helm:
   values:
     global:
       cattle:
+        clusterId: local
         psp:
           enabled: false
       rbac:
@@ -18,7 +19,9 @@ helm:
     hardenedKubelet:
       enabled: false
     kubelet:
-      enabled: false
+      enabled: true
+      serviceMonitor:
+        cAdvisor: false
     prometheus:
       prometheusSpec:
         retention: 1d
