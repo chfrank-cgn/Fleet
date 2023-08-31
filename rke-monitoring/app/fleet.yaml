@@ -1,0 +1,11 @@
+defaultNamespace: cattle-monitoring-system
+helm:
+  repo: https://git.rancher.io/charts
+  version: 102.0.1+up40.1.2
+  chart: rancher-monitoring
+  releaseName: rancher-monitoring
+  values:
+    prometheus:
+      prometheusSpec:
+        retention: 1d
+

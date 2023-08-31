@@ -1,0 +1,4 @@
+defaultNamespace: cattle-logging-system
+helm:
+  releaseName: rancher-logging-config
+
