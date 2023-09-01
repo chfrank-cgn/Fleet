@@ -25,7 +25,7 @@ helm:
     hardenedKubelet:
       enabled: false
     kubelet:
-      enabled: false
+      enabled: true
       serviceMonitor:
         cAdvisor: false
     prometheus:
