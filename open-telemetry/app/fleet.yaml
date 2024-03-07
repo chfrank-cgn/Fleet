@@ -1,0 +1,14 @@
+defaultNamespace: open-telemetry
+helm:
+  releaseName: open-telemetry-operator
+  chart: opentelemetry-operator
+  version: 0.48.0
+  repo: http://chartcgn.ddns.net
+  values:
+    replicaCount: 1
+    admissionWebhooks:
+      certManager:
+        enabled: false
+      autoGenerateCert:
+        enabled: true
+
