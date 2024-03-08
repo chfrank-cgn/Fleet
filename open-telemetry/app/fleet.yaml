@@ -3,7 +3,7 @@ helm:
   releaseName: open-telemetry-operator
   chart: opentelemetry-operator
   version: 0.48.0
-  repo: http://chartcgn.ddns.net
+  repo: https://open-telemetry.github.io/opentelemetry-helm-charts
   values:
     replicaCount: 1
     admissionWebhooks:
