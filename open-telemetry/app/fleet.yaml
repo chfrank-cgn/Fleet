@@ -2,7 +2,7 @@ defaultNamespace: open-telemetry
 helm:
   releaseName: open-telemetry-operator
   chart: opentelemetry-operator
-  version: 0.48.0
+  version: 0.127.0
   repo: https://open-telemetry.github.io/opentelemetry-helm-charts
   values:
     replicaCount: 1
